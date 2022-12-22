@@ -26,7 +26,6 @@ public class MatrixTranspose {
                 }else {
                     System.out.print(tempMatrix[i][j] + ",");
                 }
-
             }
             System.out.print("]\n");
         }
