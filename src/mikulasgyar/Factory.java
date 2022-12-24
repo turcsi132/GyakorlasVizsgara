@@ -38,8 +38,16 @@ public class Factory {
                 } else return null;
             }
         }
-
         return null;
+    }
+
+    public Toy produce(String color){
+        Toy toy = new Toy(color);
+        if (balance >= 25) {
+            balance -= 25;
+            toy = new Doll(color);
+            return toy;
+        } else return null;
     }
 
 }
